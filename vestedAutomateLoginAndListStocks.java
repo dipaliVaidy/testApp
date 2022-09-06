@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import graphql.Assert;
 import io.opentelemetry.api.internal.StringUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -132,6 +133,7 @@ public class vestedAutomateLoginAndListStocks {
 					break;
 			}
 		}
+		Assert.assertTrue(sortFunctionality);
 		if(sortFunctionality)
 		{
 			System.out.println("SORT Functionality is working");
@@ -154,6 +156,7 @@ public class vestedAutomateLoginAndListStocks {
 					break;
 			}
 		}
+		Assert.assertTrue(sortFunctionality);
 		if(sortFunctionality)
 		{
 			System.out.println("SORT Functionality is working");
